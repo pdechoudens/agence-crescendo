@@ -6,15 +6,15 @@
 const CONCERTS = [
   {
     date: "2026-11-13",
+    heure: "15h30",
     lieu: "EMS Les Pins",
     artistes: "Josefa Ibarra et Céline Chalande — piano et chant",
-    passe: true,
   },
   {
     date: "2026-11-07",
+    heure: "15h30",
     lieu: "EMS La Providenza",
     artistes: "Josefa Ibarra et Céline Chalande — piano et chant",
-    passe: true,
   },
   {
     date: "2026-07-11",
