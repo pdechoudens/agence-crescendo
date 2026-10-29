@@ -2,16 +2,19 @@
 // Pour ajouter un concert : copier un bloc { ... }, changer les infos, garder la virgule.
 // Les concerts passés passent automatiquement dans « Concerts passés ».
 // date : AAAA-MM-JJ   ·   programme : facultatif (une ligne par œuvre)
+// passe: true  →  range le concert dans « Concerts passés » même si sa date n'est pas encore passée
 const CONCERTS = [
   {
     date: "2026-11-13",
     lieu: "EMS Les Pins",
     artistes: "Josefa Ibarra et Céline Chalande — piano et chant",
+    passe: true,
   },
   {
     date: "2026-11-07",
     lieu: "EMS La Providenza",
     artistes: "Josefa Ibarra et Céline Chalande — piano et chant",
+    passe: true,
   },
   {
     date: "2026-07-11",

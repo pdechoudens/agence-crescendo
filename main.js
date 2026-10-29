@@ -9,8 +9,9 @@
     return new Date(y, m - 1, d);
   };
 
-  const upcoming = list.filter((c) => parse(c) >= today).sort((a, b) => parse(a) - parse(b));
-  const past = list.filter((c) => parse(c) < today).sort((a, b) => parse(b) - parse(a));
+  const isPast = (c) => c.passe || parse(c) < today;
+  const upcoming = list.filter((c) => !isPast(c)).sort((a, b) => parse(a) - parse(b));
+  const past = list.filter(isPast).sort((a, b) => parse(b) - parse(a));
 
   const fmtDay = new Intl.DateTimeFormat("fr-CH", { day: "2-digit" });
   const fmtMonth = new Intl.DateTimeFormat("fr-CH", { month: "short" });
